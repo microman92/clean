@@ -1,13 +1,14 @@
 <?php
-require 'phpmailer/PHPMailer.php'
-require 'phpmailer/SMTP.php'
-require 'phpmailer/Exception.php'
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
 $data = "Ф.И.О"
 $tel = "Номер телефона"
 $comment = "Комментарии"
 
 $title = "Заголовок письма";
+$body = "";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
