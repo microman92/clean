@@ -1,7 +1,7 @@
 <?php
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require './phpmailer/PHPMailer.php';
+require './phpmailer/SMTP.php';
+require './phpmailer/Exception.php';
 
 $data = "Ф.И.О"
 $tel = "Номер телефона"
